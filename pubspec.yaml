@@ -1,0 +1,64 @@
+name: object_detector
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.8
+  camera: ^0.11.1
+  tflite_flutter: ^0.11.0
+  image: ^4.2.0
+  image_picker: ^1.1.2
+  path_provider: ^2.1.4
+  shared_preferences: ^2.5.3
+  file_picker: ^10.3.3
+
+  
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4  # Keeping only one reference
+
+flutter_launcher_icons:  # Configuration section
+  android: true
+  ios: true
+  image_path: "assets/icon/app_logo.jpg"
+  remove_alpha_ios: true
+
+
+flutter:
+
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/yolov2_tiny.tflite
+    - assets/yolov2_tiny.txt
+    - assets/ssd_mobilenet.tflite
+    - assets/ssd_mobilenet.txt
+    - assets/mobilenet_v1_1.0_224.tflite
+    - assets/mobilenet_v1_1.0_224.txt
+    - assets/posenet_mv1_075_float_from_checkpoints.tflite
+    - assets/yolov5s_f16.tflite
+    - assets/yolov5sdynm_range.tflite
+    - assets/mobilenet_v3_large-mobilenet-v3-large-float.tflite
+    - assets/MobileNet-v2.tflite
+    - assets/MobileNet-v3-Large.tflite
+
+
